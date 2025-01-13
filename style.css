@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+  --primary: #2a2d3e;
+  --accent: #7289da;
+  --text: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--primary), #1a1c27);
+  color: var(--text);
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ta-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: var(--text);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px var(--shadow);
+  min-height: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.heading h1 {
+  text-align: center;
+  color: var(--text);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+}
+
+.input-wrapper input {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 20px;
+  color: var(--text);
+  width: 500px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.input-wrapper button {
+  background: var(--accent);
+  color: var(--text);
+  border: 0;
+  padding: 12px 25px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.input-wrapper button:hover {
+  background: #5b73d1;
+  transform: translateY(-2px);
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.todo-item input {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.todo-item i {
+  color: var(--accent);
+  background: rgba(114, 137, 218, 0.1);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+}
+
+.todo-item i:hover {
+  background: var(--accent);
+  color: var(--text);
+  transform: scale(1.1);
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.fa-x {
+  padding: 6px 8px !important;
+}
